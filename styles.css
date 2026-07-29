@@ -197,7 +197,7 @@ nav a:hover::after {
 
 .hero-portrait {
   position: absolute;
-  top: 96px;
+  top: -168px;
   right: 0;
   z-index: 1;
   display: grid;
