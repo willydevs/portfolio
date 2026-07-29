@@ -261,6 +261,19 @@ nav a:hover::after {
   object-fit: fill;
   object-position: center;
   filter: saturate(0.96) contrast(1.05);
+  opacity: calc(1 - var(--portrait-dissolve, 0) * 0.98);
+  transition: opacity 80ms linear;
+}
+
+.portrait-dissolve-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: var(--portrait-dissolve, 0);
+  pointer-events: none;
 }
 
 .eyebrow {
