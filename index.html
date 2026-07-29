@@ -36,7 +36,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260729-memorias" />
+    <link rel="stylesheet" href="./styles.css?v=20260729-memorias-modal" />
 
     <script type="application/ld+json">
       {
@@ -153,201 +153,337 @@
           <p class="eyebrow">Registros reais</p>
           <h2>Antes de AppSec e IA, teve bancada, cabo, sala de aula e rede em producao.</h2>
           <p>
-            Um recorte visual da base tecnica: infraestrutura, suporte, ensino, provedor de bairro e ambientes
-            que precisavam funcionar de verdade.
+            A historia ficou separada por fases para mostrar como a base tecnica foi sendo construida:
+            infraestrutura, ensino, formacao, comunidade e produto.
           </p>
         </div>
 
-        <div class="memory-grid">
-          <article class="memory-card wide" style="--delay: 0ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-plus-tech-cabeamento-2016.jpg" alt="Willy Elvis em trabalho de cabeamento estruturado pela Plus Tech em 2016" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>2016</span>
-              <h3>Cabeamento estruturado pela Plus Tech</h3>
-              <p>Inicio no campo, com cliente real, ferramenta na mesa e rede para entregar.</p>
-            </div>
-          </article>
+        <div class="memory-group">
+          <div class="memory-group-heading">
+            <p class="eyebrow">Infraestrutura em campo</p>
+            <h3>Rede, suporte e operacao fora do mundo perfeito dos diagramas.</h3>
+          </div>
+          <div class="memory-grid">
+            <button class="memory-card wide" type="button" style="--delay: 0ms" data-memory-src="./assets/memorias/memoria-plus-tech-cabeamento-2016.jpg" data-memory-meta="2016" data-memory-title="Cabeamento estruturado pela Plus Tech" data-memory-story="Essa fase foi chao de obra, mesa de cliente e cabo azul passando por onde precisava passar. Foi ali que tecnologia deixou de ser teoria e virou responsabilidade de entregar uma rede funcionando.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-plus-tech-cabeamento-2016.jpg" alt="Willy Elvis em trabalho de cabeamento estruturado pela Plus Tech em 2016" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2016</span>
+                <strong>Cabeamento estruturado pela Plus Tech</strong>
+                <span class="memory-storyline">Essa fase foi chao de obra, mesa de cliente e cabo azul passando por onde precisava passar. Foi ali que tecnologia deixou de ser teoria e virou responsabilidade de entregar uma rede funcionando.</span>
+              </span>
+            </button>
 
-          <article class="memory-card" style="--delay: 70ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-cabeamento-contabilidade-2016.jpg" alt="Instalacao de cabos de rede em escritorio de contabilidade" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>2016</span>
-              <h3>Contratos de TI em escritorio</h3>
-              <p>Cabeamento e organizacao fisica para manter operacao rodando.</p>
-            </div>
-          </article>
+            <button class="memory-card" type="button" style="--delay: 70ms" data-memory-src="./assets/memorias/memoria-cabeamento-contabilidade-2016.jpg" data-memory-meta="2016" data-memory-title="Contratos de TI em escritorio" data-memory-story="Em contrato pequeno, cada ponto de rede importa. Uma falha simples parava atendimento, impressao, sistema e rotina de escritorio.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-cabeamento-contabilidade-2016.jpg" alt="Instalacao de cabos de rede em escritorio de contabilidade" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2016</span>
+                <strong>Contratos de TI em escritorio</strong>
+                <span class="memory-storyline">Em contrato pequeno, cada ponto de rede importa. Uma falha simples parava atendimento, impressao, sistema e rotina de escritorio.</span>
+              </span>
+            </button>
 
-          <article class="memory-card tall" style="--delay: 140ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-sociedade-semear-antes-2016-1.jpg" alt="Rack de rede antes da organizacao em contrato de suporte" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>2016</span>
-              <h3>Antes da organizacao</h3>
-              <p>Ambiente herdado, cabos soltos e diagnostico antes da melhoria.</p>
-            </div>
-          </article>
+            <button class="memory-card tall" type="button" style="--delay: 140ms" data-memory-src="./assets/memorias/memoria-sociedade-semear-antes-2016-1.jpg" data-memory-meta="2016" data-memory-title="Antes da organizacao" data-memory-story="O primeiro passo era entender o caos sem julgar o caos. Antes de melhorar, tinha que mapear, testar, descobrir o que alimentava o que e onde a falha realmente nascia.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-sociedade-semear-antes-2016-1.jpg" alt="Rack de rede antes da organizacao em contrato de suporte" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2016</span>
+                <strong>Antes da organizacao</strong>
+                <span class="memory-storyline">O primeiro passo era entender o caos sem julgar o caos. Antes de melhorar, tinha que mapear, testar, descobrir o que alimentava o que e onde a falha realmente nascia.</span>
+              </span>
+            </button>
 
-          <article class="memory-card" style="--delay: 210ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-sociedade-semear-antes-2016-2.jpg" alt="Rack com switches e muitos cabos antes da organizacao" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>2016</span>
-              <h3>Rede real, bagunca real</h3>
-              <p>Aquelas cenas que ensinam troubleshooting melhor que qualquer slide.</p>
-            </div>
-          </article>
+            <button class="memory-card" type="button" style="--delay: 210ms" data-memory-src="./assets/memorias/memoria-sociedade-semear-antes-2016-2.jpg" data-memory-meta="2016" data-memory-title="Rede real, bagunca real" data-memory-story="A foto e quase um lembrete: producao raramente parece limpa quando voce chega. Aprendi a diagnosticar no meio do improviso e entregar controle mesmo assim.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-sociedade-semear-antes-2016-2.jpg" alt="Rack com switches e muitos cabos antes da organizacao" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2016</span>
+                <strong>Rede real, bagunca real</strong>
+                <span class="memory-storyline">A foto e quase um lembrete: producao raramente parece limpa quando voce chega. Aprendi a diagnosticar no meio do improviso e entregar controle mesmo assim.</span>
+              </span>
+            </button>
 
-          <article class="memory-card" style="--delay: 280ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-sociedade-semear-depois.jpg" alt="Rack de rede organizado depois do trabalho de cabeamento" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>Depois</span>
-              <h3>Rack entregue e organizado</h3>
-              <p>Do caos operacional para uma estrutura mais limpa e sustentavel.</p>
-            </div>
-          </article>
+            <button class="memory-card" type="button" style="--delay: 280ms" data-memory-src="./assets/memorias/memoria-sociedade-semear-depois.jpg" data-memory-meta="Depois" data-memory-title="Rack entregue e organizado" data-memory-story="O antes e depois virou uma pequena escola. Quando a infraestrutura fica legivel, o suporte melhora, o erro diminui e a operacao respira.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-sociedade-semear-depois.jpg" alt="Rack de rede organizado depois do trabalho de cabeamento" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>Depois</span>
+                <strong>Rack entregue e organizado</strong>
+                <span class="memory-storyline">O antes e depois virou uma pequena escola. Quando a infraestrutura fica legivel, o suporte melhora, o erro diminui e a operacao respira.</span>
+              </span>
+            </button>
 
-          <article class="memory-card wide" style="--delay: 350ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-peritus-servidores.jpg" alt="Fachada de cliente atendido pela Plus Tech" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>Cliente</span>
-              <h3>Administracao de servidores e ambiente</h3>
-              <p>Suporte e continuidade para empresas que dependiam da infraestrutura.</p>
-            </div>
-          </article>
+            <button class="memory-card wide" type="button" style="--delay: 350ms" data-memory-src="./assets/memorias/memoria-peritus-servidores.jpg" data-memory-meta="Cliente" data-memory-title="Administracao de servidores e ambiente" data-memory-story="Por tras da fachada havia rotina, servidor, usuario, chamado e expectativa. Foi onde a palavra disponibilidade comecou a ter peso real.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-peritus-servidores.jpg" alt="Fachada de cliente atendido pela Plus Tech" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>Cliente</span>
+                <strong>Administracao de servidores e ambiente</strong>
+                <span class="memory-storyline">Por tras da fachada havia rotina, servidor, usuario, chamado e expectativa. Foi onde a palavra disponibilidade comecou a ter peso real.</span>
+              </span>
+            </button>
 
-          <article class="memory-card tall" style="--delay: 420ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-digitalnet-diagnostico-rede.jpg" alt="Diagnostico de problema em rede condominial" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>Rede</span>
-              <h3>Diagnostico em campo</h3>
-              <p>Investigacao de falha em rede condominial, onde detalhe pequeno derruba tudo.</p>
-            </div>
-          </article>
+            <button class="memory-card tall" type="button" style="--delay: 420ms" data-memory-src="./assets/memorias/memoria-digitalnet-diagnostico-rede.jpg" data-memory-meta="Rede" data-memory-title="Diagnostico em campo" data-memory-story="Rede condominial ensina humildade rapido. Um cabo, um conector, um divisor ou um sinal ruim podia virar horas de investigacao.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-digitalnet-diagnostico-rede.jpg" alt="Diagnostico de problema em rede condominial" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>Rede</span>
+                <strong>Diagnostico em campo</strong>
+                <span class="memory-storyline">Rede condominial ensina humildade rapido. Um cabo, um conector, um divisor ou um sinal ruim podia virar horas de investigacao.</span>
+              </span>
+            </button>
 
-          <article class="memory-card" style="--delay: 490ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-switch-cisco-2017.jpg" alt="Primeiro switch Cisco gerenciavel usado em provedor de bairro" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>2017</span>
-              <h3>Primeiro switch Cisco gerenciavel</h3>
-              <p>Aprendizado de VLAN, segmentacao e controle de rede na pratica.</p>
-            </div>
-          </article>
+            <button class="memory-card" type="button" style="--delay: 490ms" data-memory-src="./assets/memorias/memoria-switch-cisco-2017.jpg" data-memory-meta="2017" data-memory-title="Primeiro switch Cisco gerenciavel" data-memory-story="Esse switch representa uma virada: VLAN, segmentacao, porta, controle e a sensacao de estar mexendo em algo que podia escalar.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-switch-cisco-2017.jpg" alt="Primeiro switch Cisco gerenciavel usado em provedor de bairro" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2017</span>
+                <strong>Primeiro switch Cisco gerenciavel</strong>
+                <span class="memory-storyline">Esse switch representa uma virada: VLAN, segmentacao, porta, controle e a sensacao de estar mexendo em algo que podia escalar.</span>
+              </span>
+            </button>
 
-          <article class="memory-card wide" style="--delay: 560ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-professor-informatica.jpg" alt="Willy Elvis em sala de aula de informatica" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>Ensino</span>
-              <h3>Professor de informatica</h3>
-              <p>Ensinar tecnologia ajudou a transformar complexidade em linguagem simples.</p>
-            </div>
-          </article>
+            <button class="memory-card" type="button" style="--delay: 560ms" data-memory-src="./assets/memorias/memoria-plustech-cabeamento.jpg" data-memory-meta="Campo" data-memory-title="Cabo por cabo" data-memory-story="Nem toda experiencia bonita aparece em dashboard. Algumas nascem no alicate, no teste de continuidade e na paciencia de deixar tudo pronto.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-plustech-cabeamento.jpg" alt="Trabalho manual com cabos de rede azuis" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>Campo</span>
+                <strong>Cabo por cabo</strong>
+                <span class="memory-storyline">Nem toda experiencia bonita aparece em dashboard. Algumas nascem no alicate, no teste de continuidade e na paciencia de deixar tudo pronto.</span>
+              </span>
+            </button>
 
-          <article class="memory-card" style="--delay: 630ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-peac-petrobras-2019.jpg" alt="Aula de informatica em comunidade pelo projeto PEAC Petrobras" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>2019</span>
-              <h3>Aula em comunidade</h3>
-              <p>Tecnologia como ferramenta de acesso, autonomia e oportunidade.</p>
-            </div>
-          </article>
+            <button class="memory-card tall" type="button" style="--delay: 630ms" data-memory-src="./assets/memorias/memoria-provedor-bairro-2019.jpg" data-memory-meta="2019" data-memory-title="Provedor de bairro" data-memory-story="Ter provedor de bairro era viver a rede na pele. Quando caia, nao era grafico: era vizinho, cliente e alguem esperando internet voltar.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-provedor-bairro-2019.jpg" alt="Willy Elvis em provedor proprio de bairro em 2019" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2019</span>
+                <strong>Provedor de bairro</strong>
+                <span class="memory-storyline">Ter provedor de bairro era viver a rede na pele. Quando caia, nao era grafico: era vizinho, cliente e alguem esperando internet voltar.</span>
+              </span>
+            </button>
 
-          <article class="memory-card" style="--delay: 700ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-plustech-cabeamento.jpg" alt="Trabalho manual com cabos de rede azuis" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>Campo</span>
-              <h3>Cabo por cabo</h3>
-              <p>Base de infraestrutura feita de paciencia, teste e acabamento.</p>
-            </div>
-          </article>
+            <button class="memory-card" type="button" style="--delay: 700ms" data-memory-src="./assets/memorias/memoria-mikrotik-vlans.jpg" data-memory-meta="MikroTik" data-memory-title="VLANs e segmentacao" data-memory-story="Foi na configuracao fina que a infraestrutura encontrou logica: separar trafego, controlar acesso e entender que rede tambem e arquitetura.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-mikrotik-vlans.jpg" alt="Tela de configuracao MikroTik com VLANs" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>MikroTik</span>
+                <strong>VLANs e segmentacao</strong>
+                <span class="memory-storyline">Foi na configuracao fina que a infraestrutura encontrou logica: separar trafego, controlar acesso e entender que rede tambem e arquitetura.</span>
+              </span>
+            </button>
 
-          <article class="memory-card tall" style="--delay: 770ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-provedor-bairro-2019.jpg" alt="Willy Elvis em provedor proprio de bairro em 2019" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>2019</span>
-              <h3>Provedor de bairro</h3>
-              <p>Infraestrutura pequena, responsabilidade grande e cliente esperando internet.</p>
-            </div>
-          </article>
+            <button class="memory-card wide" type="button" style="--delay: 770ms" data-memory-src="./assets/memorias/memoria-santabarbara-dominio-ad.jpg" data-memory-meta="Escola" data-memory-title="Dominio, AD e biblioteca" data-memory-story="Gerenciar dominio e rede em ambiente escolar exigia cuidado: maquinas compartilhadas, usuarios diferentes e uma biblioteca que precisava estar pronta para aula e atendimento.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-santabarbara-dominio-ad.jpg" alt="Laboratorio da Escola Santa Barbara com computadores em dominio" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>Escola</span>
+                <strong>Dominio, AD e biblioteca</strong>
+                <span class="memory-storyline">Gerenciar dominio e rede em ambiente escolar exigia cuidado: maquinas compartilhadas, usuarios diferentes e uma biblioteca que precisava estar pronta para aula e atendimento.</span>
+              </span>
+            </button>
 
-          <article class="memory-card wide" style="--delay: 840ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-petrobras-educacao-2019.jpg" alt="Willy Elvis apresentando projeto de educacao ligado a Petrobras" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>2019</span>
-              <h3>Educacao e seguranca em campo</h3>
-              <p>Comunicacao tecnica em ambiente comunitario, com responsabilidade social.</p>
-            </div>
-          </article>
+          </div>
+        </div>
 
-          <article class="memory-card" style="--delay: 910ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-ipv6-2015.jpg" alt="Aula de certificacao IPv6 em 2015" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>2015</span>
-              <h3>IPv6 antes de virar pauta comum</h3>
-              <p>Quando todo mundo dizia que o IPv4 ja tinha acabado.</p>
-            </div>
-          </article>
+        <div class="memory-group">
+          <div class="memory-group-heading">
+            <p class="eyebrow">Ensino e laboratorios</p>
+            <h3>A parte de ensinar, montar, manter e traduzir tecnologia para gente.</h3>
+          </div>
+          <div class="memory-grid">
+            <button class="memory-card wide" type="button" style="--delay: 0ms" data-memory-src="./assets/memorias/memoria-professor-informatica.jpg" data-memory-meta="Ensino" data-memory-title="Professor de informatica" data-memory-story="Dar aula me obrigou a explicar sem esconder atras de termo tecnico. Quando o aluno entende, a gente descobre se realmente sabe.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-professor-informatica.jpg" alt="Willy Elvis em sala de aula de informatica" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>Ensino</span>
+                <strong>Professor de informatica</strong>
+                <span class="memory-storyline">Dar aula me obrigou a explicar sem esconder atras de termo tecnico. Quando o aluno entende, a gente descobre se realmente sabe.</span>
+              </span>
+            </button>
 
-          <article class="memory-card" style="--delay: 980ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-s2b-2016.jpg" alt="Certificado de infraestrutura de TI do programa Students to Business" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>2016</span>
-              <h3>Students to Business</h3>
-              <p>Formacao em infraestrutura de TI para consolidar a base tecnica.</p>
-            </div>
-          </article>
+            <button class="memory-card" type="button" style="--delay: 70ms" data-memory-src="./assets/memorias/memoria-peac-petrobras-2019.jpg" data-memory-meta="2019" data-memory-title="Aula em comunidade" data-memory-story="Tecnologia tambem foi acesso. Em comunidade, informatica nao era so conteudo: era caminho para autonomia e oportunidade.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-peac-petrobras-2019.jpg" alt="Aula de informatica em comunidade pelo projeto PEAC Petrobras" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2019</span>
+                <strong>Aula em comunidade</strong>
+                <span class="memory-storyline">Tecnologia tambem foi acesso. Em comunidade, informatica nao era so conteudo: era caminho para autonomia e oportunidade.</span>
+              </span>
+            </button>
 
-          <article class="memory-card" style="--delay: 1120ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-mikrotik-vlans.jpg" alt="Tela de configuracao MikroTik com VLANs" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>MikroTik</span>
-              <h3>VLANs e segmentacao</h3>
-              <p>Configuracao fina para separar trafego e manter controle operacional.</p>
-            </div>
-          </article>
+            <button class="memory-card wide" type="button" style="--delay: 140ms" data-memory-src="./assets/memorias/memoria-laboratorio-informatica-alunos.jpg" data-memory-meta="Laboratorio" data-memory-title="Sala cheia, maquina ligada" data-memory-story="Laboratorio cheio era teste de infraestrutura e didatica ao mesmo tempo. Se a rede, os PCs ou o plano falhassem, a aula sentia na hora.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-laboratorio-informatica-alunos.jpg" alt="Laboratorio de informatica com alunos usando computadores" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>Laboratorio</span>
+                <strong>Sala cheia, maquina ligada</strong>
+                <span class="memory-storyline">Laboratorio cheio era teste de infraestrutura e didatica ao mesmo tempo. Se a rede, os PCs ou o plano falhassem, a aula sentia na hora.</span>
+              </span>
+            </button>
 
-          <article class="memory-card" style="--delay: 1190ms">
-            <div class="memory-media">
-              <img src="./assets/memorias/memoria-taekwondo-2015.jpg" alt="Pratica de Taekwondo em 2015" loading="lazy" />
-            </div>
-            <div class="memory-copy">
-              <span>2015</span>
-              <h3>Disciplina fora do codigo</h3>
-              <p>Esporte tambem entra na historia: foco, constancia e controle.</p>
-            </div>
-          </article>
+            <button class="memory-card wide" type="button" style="--delay: 210ms" data-memory-src="./assets/memorias/memoria-montagem-laboratorios-plustech.jpg" data-memory-meta="Plus Tech" data-memory-title="Montar, ensinar e manter" data-memory-story="Antes da aula acontecer, tinha computador para montar, sistema para preparar e manutencao para fazer. A sala pronta era resultado de bastidor tambem.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-montagem-laboratorios-plustech.jpg" alt="Montagem de computadores para laboratorios de informatica pela Plus Tech" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>Plus Tech</span>
+                <strong>Montar, ensinar e manter</strong>
+                <span class="memory-storyline">Antes da aula acontecer, tinha computador para montar, sistema para preparar e manutencao para fazer. A sala pronta era resultado de bastidor tambem.</span>
+              </span>
+            </button>
+
+            <button class="memory-card" type="button" style="--delay: 280ms" data-memory-src="./assets/memorias/memoria-cepe-treinamento-freelancer.jpg" data-memory-meta="Freela" data-memory-title="Treinamento de informatica no CEPE" data-memory-story="Freelas de treinamento ajudaram a transformar experiencia pratica em metodologia. Cada turma pedia uma forma diferente de explicar.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-cepe-treinamento-freelancer.jpg" alt="Treinamento de informatica freelancer no CEPE" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>Freela</span>
+                <strong>Treinamento de informatica no CEPE</strong>
+                <span class="memory-storyline">Freelas de treinamento ajudaram a transformar experiencia pratica em metodologia. Cada turma pedia uma forma diferente de explicar.</span>
+              </span>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="memory-group">
+          <div class="memory-group-heading">
+            <p class="eyebrow">Formacao e comunidade</p>
+            <h3>Eventos, professores, grupos e disciplina que moldaram a visao profissional.</h3>
+          </div>
+          <div class="memory-grid">
+            <button class="memory-card" type="button" style="--delay: 0ms" data-memory-src="./assets/memorias/memoria-taekwondo-2015.jpg" data-memory-meta="2015" data-memory-title="Disciplina fora do codigo" data-memory-story="Esporte tambem entra na historia porque constancia nao nasce so no teclado. Foco, controle e repeticao aparecem em tudo depois.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-taekwondo-2015.jpg" alt="Pratica de Taekwondo em 2015" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2015</span>
+                <strong>Disciplina fora do codigo</strong>
+                <span class="memory-storyline">Esporte tambem entra na historia porque constancia nao nasce so no teclado. Foco, controle e repeticao aparecem em tudo depois.</span>
+              </span>
+            </button>
+
+            <button class="memory-card" type="button" style="--delay: 70ms" data-memory-src="./assets/memorias/memoria-ipv6-2015.jpg" data-memory-meta="2015" data-memory-title="IPv6 antes de virar pauta comum" data-memory-story="Na epoca parecia que o IPv4 ja tinha acabado de vez. A piada ficou, mas a curiosidade por base de rede ficou mais ainda.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-ipv6-2015.jpg" alt="Aula de certificacao IPv6 em 2015" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2015</span>
+                <strong>IPv6 antes de virar pauta comum</strong>
+                <span class="memory-storyline">Na epoca parecia que o IPv4 ja tinha acabado de vez. A piada ficou, mas a curiosidade por base de rede ficou mais ainda.</span>
+              </span>
+            </button>
+
+            <button class="memory-card wide" type="button" style="--delay: 140ms" data-memory-src="./assets/memorias/memoria-aula-redes-ondas-2016.jpg" data-memory-meta="2016" data-memory-title="Aula de redes sobre ondas" data-memory-story="Entender rede tambem passava por fisica, sinal e conceito. Essa base ajuda ate hoje quando o problema nao esta no codigo, mas no caminho.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-aula-redes-ondas-2016.jpg" alt="Aula de redes sobre ondas com professor Ricardo Torres em 2016" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2016</span>
+                <strong>Aula de redes sobre ondas</strong>
+                <span class="memory-storyline">Entender rede tambem passava por fisica, sinal e conceito. Essa base ajuda ate hoje quando o problema nao esta no codigo, mas no caminho.</span>
+              </span>
+            </button>
+
+            <button class="memory-card wide" type="button" style="--delay: 210ms" data-memory-src="./assets/memorias/memoria-grupo-empresarios-ti.jpg" data-memory-meta="Aprendiz" data-memory-title="Ouvir para aprender" data-memory-story="Eu estava ali muito mais para ouvir do que para falar. Farda de aprendiz, sala cheia de empresarios e uma vontade enorme de entender como gente grande pensava negocio.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-grupo-empresarios-ti.jpg" alt="Willy Elvis em grupo de empresarios de TI em Aracaju" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>Aprendiz</span>
+                <strong>Ouvir para aprender</strong>
+                <span class="memory-storyline">Eu estava ali muito mais para ouvir do que para falar. Farda de aprendiz, sala cheia de empresarios e uma vontade enorme de entender como gente grande pensava negocio.</span>
+              </span>
+            </button>
+
+            <button class="memory-card tall" type="button" style="--delay: 280ms" data-memory-src="./assets/memorias/memoria-evento-oa5-unit-2020.jpg" data-memory-meta="2020" data-memory-title="Evento OA5 na Unit" data-memory-story="Eventos abriram repertorio. Ver outras pessoas apresentando produto, mercado e tecnologia ajudou a conectar estudo com posicionamento profissional.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-evento-oa5-unit-2020.jpg" alt="Participacao em evento OA5 de Marco de 2020 na Unit" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2020</span>
+                <strong>Evento OA5 na Unit</strong>
+                <span class="memory-storyline">Eventos abriram repertorio. Ver outras pessoas apresentando produto, mercado e tecnologia ajudou a conectar estudo com posicionamento profissional.</span>
+              </span>
+            </button>
+
+            <button class="memory-card" type="button" style="--delay: 350ms" data-memory-src="./assets/memorias/memoria-s2b-2016.jpg" data-memory-meta="2016" data-memory-title="Students to Business" data-memory-story="A certificacao foi uma especie de marco: confirmar uma base, ganhar vocabulario e seguir mais confiante para ambientes reais.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-s2b-2016.jpg" alt="Certificado de infraestrutura de TI do programa Students to Business" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2016</span>
+                <strong>Students to Business</strong>
+                <span class="memory-storyline">A certificacao foi uma especie de marco: confirmar uma base, ganhar vocabulario e seguir mais confiante para ambientes reais.</span>
+              </span>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="memory-group">
+          <div class="memory-group-heading">
+            <p class="eyebrow">Produto e negocio</p>
+            <h3>Quando a experiencia de campo vira conversa com usuario, regra e entrega.</h3>
+          </div>
+          <div class="memory-grid">
+            <button class="memory-card wide" type="button" style="--delay: 0ms" data-memory-src="./assets/memorias/memoria-homologacao-features-sistema.jpg" data-memory-meta="Sistema" data-memory-title="Homologacao e novas features" data-memory-story="Aqui ja aparece outra camada da trajetoria: levantar necessidade, analisar regra, homologar com usuario e explicar mudanca para quem realmente usaria o sistema.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-homologacao-features-sistema.jpg" alt="Willy Elvis explicando novas features de sistema em reuniao" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>Sistema</span>
+                <strong>Homologacao e novas features</strong>
+                <span class="memory-storyline">Aqui ja aparece outra camada da trajetoria: levantar necessidade, analisar regra, homologar com usuario e explicar mudanca para quem realmente usaria o sistema.</span>
+              </span>
+            </button>
+
+            <button class="memory-card wide" type="button" style="--delay: 70ms" data-memory-src="./assets/memorias/memoria-petrobras-educacao-2019.jpg" data-memory-meta="2019" data-memory-title="Educacao e seguranca em campo" data-memory-story="Comunicar risco e cuidado tambem e tecnologia. Essa vivencia ajudou a falar de seguranca de um jeito que pessoas diferentes conseguem entender.">
+              <span class="memory-media">
+                <img src="./assets/memorias/memoria-petrobras-educacao-2019.jpg" alt="Willy Elvis apresentando projeto de educacao ligado a Petrobras" loading="lazy" />
+              </span>
+              <span class="memory-copy">
+                <span>2019</span>
+                <strong>Educacao e seguranca em campo</strong>
+                <span class="memory-storyline">Comunicar risco e cuidado tambem e tecnologia. Essa vivencia ajudou a falar de seguranca de um jeito que pessoas diferentes conseguem entender.</span>
+              </span>
+            </button>
+
+          </div>
         </div>
       </section>
 
+      <div class="memory-lightbox" data-memory-lightbox aria-hidden="true">
+        <button class="memory-lightbox-backdrop" type="button" data-memory-close aria-label="Fechar visualizacao"></button>
+        <article class="memory-lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="memory-lightbox-title">
+          <button class="memory-lightbox-close" type="button" data-memory-close aria-label="Fechar">x</button>
+          <div class="memory-lightbox-media">
+            <img data-memory-lightbox-img src="" alt="" />
+          </div>
+          <div class="memory-lightbox-copy">
+            <span data-memory-lightbox-meta></span>
+            <h3 id="memory-lightbox-title" data-memory-lightbox-title></h3>
+            <p data-memory-lightbox-story></p>
+          </div>
+        </article>
+      </div>
       <section id="trajetoria" class="timeline-section section">
         <div class="section-heading sticky-title">
           <p class="eyebrow">Timeline vertical</p>
@@ -600,6 +736,6 @@
     </script>
     <script src="./project-showcase.js"></script>
     <script src="./portrait-dissolve.js?v=20260729-dissolve-2"></script>
-    <script type="module" src="./app.js?v=20260729-memorias"></script>
+    <script type="module" src="./app.js?v=20260729-memorias-modal"></script>
   </body>
 </html>

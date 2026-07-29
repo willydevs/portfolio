@@ -222,6 +222,49 @@ document.querySelectorAll(".signal-panel div, .timeline-card, .memory-card, .pro
   });
 });
 
+const memoryLightbox = document.querySelector("[data-memory-lightbox]");
+if (memoryLightbox) {
+  const lightboxImage = memoryLightbox.querySelector("[data-memory-lightbox-img]");
+  const lightboxMeta = memoryLightbox.querySelector("[data-memory-lightbox-meta]");
+  const lightboxTitle = memoryLightbox.querySelector("[data-memory-lightbox-title]");
+  const lightboxStory = memoryLightbox.querySelector("[data-memory-lightbox-story]");
+  const closeButtons = memoryLightbox.querySelectorAll("[data-memory-close]");
+
+  function closeMemoryLightbox() {
+    memoryLightbox.classList.remove("is-open");
+    memoryLightbox.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("memory-lightbox-open");
+  }
+
+  document.querySelectorAll("[data-memory-src]").forEach((card) => {
+    card.addEventListener("click", () => {
+      const src = card.dataset.memorySrc;
+      const title = card.dataset.memoryTitle || "";
+      const meta = card.dataset.memoryMeta || "";
+      const story = card.dataset.memoryStory || "";
+
+      if (lightboxImage && src) {
+        lightboxImage.src = src;
+        lightboxImage.alt = title;
+      }
+      if (lightboxMeta) lightboxMeta.textContent = meta;
+      if (lightboxTitle) lightboxTitle.textContent = title;
+      if (lightboxStory) lightboxStory.textContent = story;
+
+      memoryLightbox.classList.add("is-open");
+      memoryLightbox.setAttribute("aria-hidden", "false");
+      document.body.classList.add("memory-lightbox-open");
+    });
+  });
+
+  closeButtons.forEach((button) => button.addEventListener("click", closeMemoryLightbox));
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && memoryLightbox.classList.contains("is-open")) {
+      closeMemoryLightbox();
+    }
+  });
+}
+
 function animate(time = 0) {
   const seconds = time * 0.001;
   scrollProgress += (targetProgress - scrollProgress) * 0.07;
