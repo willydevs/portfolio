@@ -194,7 +194,7 @@ if (projectShowcase) {
   });
 }
 
-document.querySelectorAll("a, button, .timeline-card, .project-card, .showcase-card, .lane, .signal-panel div").forEach((target) => {
+document.querySelectorAll("a, button, .timeline-card, .memory-card, .project-card, .showcase-card, .lane, .signal-panel div").forEach((target) => {
   target.addEventListener("pointerenter", () => customCursor?.classList.add("is-hovering"));
   target.addEventListener("pointerleave", () => customCursor?.classList.remove("is-hovering"));
 });
@@ -210,9 +210,9 @@ const observer = new IntersectionObserver(
   { threshold: 0.22 },
 );
 
-document.querySelectorAll(".timeline-card").forEach((card) => observer.observe(card));
+document.querySelectorAll(".timeline-card, .memory-card").forEach((card) => observer.observe(card));
 
-document.querySelectorAll(".signal-panel div, .timeline-card, .project-card, .showcase-card, .lane").forEach((surface) => {
+document.querySelectorAll(".signal-panel div, .timeline-card, .memory-card, .project-card, .showcase-card, .lane").forEach((surface) => {
   surface.addEventListener("pointermove", (event) => {
     const rect = surface.getBoundingClientRect();
     const x = ((event.clientX - rect.left) / rect.width) * 100;

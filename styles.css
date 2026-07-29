@@ -519,6 +519,169 @@ h3 {
   max-width: 780px;
 }
 
+.memory-section {
+  padding: 92px 0 130px;
+}
+
+.memory-heading {
+  display: grid;
+  gap: 16px;
+}
+
+.memory-heading p:last-child {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-flow: dense;
+  gap: clamp(14px, 2vw, 22px);
+  margin-top: 42px;
+}
+
+.memory-card {
+  --hover-x: 50%;
+  --hover-y: 50%;
+  position: relative;
+  grid-column: span 4;
+  min-height: clamp(340px, 30vw, 470px);
+  overflow: hidden;
+  border: 1px solid rgba(102, 227, 209, 0.16);
+  border-radius: 8px;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at var(--hover-x) var(--hover-y), rgba(102, 227, 209, 0.2), transparent 28%),
+    rgba(5, 17, 16, 0.62);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  transform: translateY(36px) scale(0.98);
+  filter: blur(10px) saturate(0.7);
+  transition:
+    transform 820ms cubic-bezier(0.2, 0.8, 0.2, 1) var(--delay, 0ms),
+    opacity 820ms ease var(--delay, 0ms),
+    filter 820ms ease var(--delay, 0ms),
+    border-color 260ms ease;
+}
+
+.memory-card.wide {
+  grid-column: span 8;
+}
+
+.memory-card.tall {
+  grid-row: span 2;
+  min-height: clamp(520px, 50vw, 710px);
+}
+
+.memory-card.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0) saturate(1);
+}
+
+.memory-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  border-color: rgba(102, 227, 209, 0.36);
+}
+
+.memory-media {
+  position: absolute;
+  inset: -2px;
+  z-index: -2;
+}
+
+.memory-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.78) contrast(1.08) brightness(0.74);
+  transform: scale(1.04);
+  transition:
+    filter 500ms ease,
+    transform 900ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent 0%, #000 12%, #000 86%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, #000 12%, #000 78%, transparent 100%),
+    radial-gradient(circle at center, #000 0%, #000 54%, transparent 92%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(90deg, transparent 0%, #000 12%, #000 86%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, #000 12%, #000 78%, transparent 100%),
+    radial-gradient(circle at center, #000 0%, #000 54%, transparent 92%);
+  mask-composite: intersect;
+}
+
+.memory-card:hover .memory-media img {
+  filter: saturate(0.95) contrast(1.08) brightness(0.84);
+  transform: scale(1.08);
+}
+
+.memory-card::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  background:
+    linear-gradient(180deg, rgba(5, 17, 16, 0.04) 0%, rgba(5, 17, 16, 0.32) 48%, rgba(3, 11, 10, 0.94) 100%),
+    radial-gradient(circle at 14% 16%, rgba(102, 227, 209, 0.16), transparent 34%),
+    radial-gradient(circle at 92% 18%, rgba(242, 196, 91, 0.12), transparent 24%);
+}
+
+.memory-card::before {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  content: "";
+  background:
+    radial-gradient(circle at 18% 20%, rgba(102, 227, 209, 0.2) 0 1px, transparent 2px),
+    radial-gradient(circle at 72% 62%, rgba(255, 255, 255, 0.17) 0 1px, transparent 2px);
+  background-size: 11px 11px, 17px 17px;
+  mix-blend-mode: screen;
+  opacity: 0.18;
+  transition: opacity 350ms ease;
+}
+
+.memory-card:hover::before {
+  opacity: 0.32;
+}
+
+.memory-copy {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  left: 22px;
+  display: grid;
+  gap: 8px;
+}
+
+.memory-copy span {
+  width: fit-content;
+  border: 1px solid rgba(102, 227, 209, 0.38);
+  border-radius: 999px;
+  padding: 5px 10px;
+  color: var(--aqua);
+  background: rgba(5, 17, 16, 0.56);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.memory-copy h3 {
+  max-width: 520px;
+  font-size: clamp(1.45rem, 2.4vw, 2.7rem);
+  line-height: 0.98;
+}
+
+.memory-copy p {
+  max-width: 560px;
+  color: rgba(235, 246, 243, 0.74);
+  font-size: 0.95rem;
+}
+
 .timeline-section {
   display: grid;
   grid-template-columns: minmax(240px, 0.48fr) minmax(0, 1fr);
@@ -963,6 +1126,7 @@ h3 {
   .hero,
   .intro-band,
   .timeline-section,
+  .memory-section,
   .contact,
   .site-footer {
     grid-template-columns: 1fr;
@@ -1020,6 +1184,19 @@ h3 {
   .project-grid,
   .skill-lanes {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .memory-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .memory-card,
+  .memory-card.wide {
+    grid-column: span 3;
+  }
+
+  .memory-card.tall {
+    min-height: 520px;
   }
 
   .showcase-viewport {
@@ -1081,6 +1258,29 @@ h3 {
   .project-grid,
   .skill-lanes {
     grid-template-columns: 1fr;
+  }
+
+  .memory-section {
+    padding: 74px 0 96px;
+  }
+
+  .memory-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .memory-card,
+  .memory-card.wide,
+  .memory-card.tall {
+    grid-column: auto;
+    grid-row: auto;
+    min-height: 420px;
+  }
+
+  .memory-copy {
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
   }
 
   .showcase-viewport {
