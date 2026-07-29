@@ -182,9 +182,9 @@ nav a:hover::after {
   display: grid;
   min-height: 100svh;
   width: min(1560px, calc(100% - 64px));
-  grid-template-columns: minmax(420px, 0.82fr) minmax(520px, 1.18fr);
+  grid-template-columns: minmax(420px, 0.74fr) minmax(560px, 1.26fr);
   align-items: center;
-  gap: clamp(26px, 4vw, 70px);
+  gap: clamp(18px, 3vw, 54px);
   padding: 126px 0 58px;
 }
 
@@ -197,7 +197,7 @@ nav a:hover::after {
   position: relative;
   display: grid;
   align-self: center;
-  width: min(100%, 58vw, 880px);
+  width: min(100%, 64vw, 980px);
   min-width: 0;
   margin-left: auto;
   padding-bottom: 0;
@@ -207,8 +207,8 @@ nav a:hover::after {
 .portrait-frame {
   position: relative;
   overflow: visible;
-  height: min(84svh, 930px);
-  min-height: 720px;
+  height: min(90svh, 1040px);
+  min-height: 760px;
   aspect-ratio: auto;
   border: 0;
   border-radius: 0;
@@ -244,10 +244,10 @@ nav a:hover::after {
 
 .portrait-frame img {
   display: block;
-  width: 100%;
+  width: 108%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 9%;
+  object-position: 48% 7%;
   filter: saturate(0.96) contrast(1.05);
   -webkit-mask-image: radial-gradient(ellipse at 56% 45%, #000 0%, #000 50%, rgba(0, 0, 0, 0.92) 63%, rgba(0, 0, 0, 0.36) 80%, transparent 98%);
   mask-image: radial-gradient(ellipse at 56% 45%, #000 0%, #000 50%, rgba(0, 0, 0, 0.92) 63%, rgba(0, 0, 0, 0.36) 80%, transparent 98%);
