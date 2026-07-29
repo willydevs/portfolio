@@ -181,15 +181,15 @@ nav a:hover::after {
 .hero {
   display: grid;
   min-height: 100svh;
-  width: min(1560px, calc(100% - 64px));
-  grid-template-columns: minmax(420px, 0.74fr) minmax(560px, 1.26fr);
+  width: min(1320px, calc(100% - 64px));
+  grid-template-columns: minmax(520px, 0.9fr) minmax(560px, 1.1fr);
   align-items: center;
-  gap: clamp(18px, 3vw, 54px);
+  gap: clamp(24px, 3.4vw, 52px);
   padding: 126px 0 58px;
 }
 
 .hero-copy {
-  max-width: 600px;
+  max-width: 560px;
   justify-self: end;
 }
 
@@ -197,7 +197,7 @@ nav a:hover::after {
   position: relative;
   display: grid;
   align-self: center;
-  width: min(100%, 64vw, 980px);
+  width: min(100%, 54vw, 820px);
   min-width: 0;
   margin-left: auto;
   padding-bottom: 0;
@@ -207,8 +207,8 @@ nav a:hover::after {
 .portrait-frame {
   position: relative;
   overflow: visible;
-  height: min(90svh, 1040px);
-  min-height: 760px;
+  height: min(88svh, 960px);
+  min-height: 720px;
   aspect-ratio: auto;
   border: 0;
   border-radius: 0;
@@ -244,10 +244,10 @@ nav a:hover::after {
 
 .portrait-frame img {
   display: block;
-  width: 108%;
+  width: 106%;
   height: 100%;
   object-fit: cover;
-  object-position: 48% 7%;
+  object-position: 49% 8%;
   filter: saturate(0.96) contrast(1.05);
   -webkit-mask-image: radial-gradient(ellipse at 56% 45%, #000 0%, #000 50%, rgba(0, 0, 0, 0.92) 63%, rgba(0, 0, 0, 0.36) 80%, transparent 98%);
   mask-image: radial-gradient(ellipse at 56% 45%, #000 0%, #000 50%, rgba(0, 0, 0, 0.92) 63%, rgba(0, 0, 0, 0.36) 80%, transparent 98%);
@@ -278,7 +278,13 @@ h1 {
 }
 
 .hero h1 {
-  font-size: clamp(3.35rem, 5.5vw, 5.9rem);
+  font-size: clamp(3.3rem, 4.4vw, 5.15rem);
+}
+
+@media (min-width: 1500px) {
+  .hero {
+    transform: translateX(clamp(80px, 7vw, 150px));
+  }
 }
 
 h2 {
