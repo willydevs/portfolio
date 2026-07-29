@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#07100f"/>
+      <stop offset="0.48" stop-color="#10211d"/>
+      <stop offset="1" stop-color="#1a1715"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop stop-color="#66e3d1"/>
+      <stop offset="0.55" stop-color="#f2c45b"/>
+      <stop offset="1" stop-color="#ff7a90"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M790 42C920 104 1014 184 1045 285c42 135-49 257-168 294" fill="none" stroke="url(#line)" stroke-width="16" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="845" cy="125" r="18" fill="#66e3d1"/>
+  <circle cx="1006" cy="306" r="26" fill="#f2c45b"/>
+  <circle cx="878" cy="548" r="21" fill="#ff7a90"/>
+  <text x="86" y="170" fill="#66e3d1" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">APPSEC | DEVSECOPS | SEGURANÇA EM IA</text>
+  <text x="82" y="304" fill="#f4fbf7" font-family="Inter, Arial, sans-serif" font-size="78" font-weight="800">Willy Elvis</text>
+  <text x="86" y="394" fill="#f4fbf7" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="700">Sistemas em produção com</text>
+  <text x="86" y="462" fill="#f4fbf7" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="700">segurança desde a construção.</text>
+  <text x="88" y="544" fill="#a9b9b2" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600">plustech.aju.br</text>
+</svg>

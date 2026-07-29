@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://plustech.aju.br/sitemap.xml
