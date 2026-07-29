@@ -285,6 +285,14 @@ h1 {
   .hero {
     transform: translateX(clamp(80px, 7vw, 150px));
   }
+
+  .hero-copy {
+    transform: translateY(clamp(90px, 11vh, 145px));
+  }
+
+  .hero-portrait {
+    transform: translateY(clamp(-96px, -8vh, -64px));
+  }
 }
 
 h2 {
