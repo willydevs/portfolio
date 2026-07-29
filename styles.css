@@ -182,24 +182,27 @@ nav a:hover::after {
   display: grid;
   min-height: 100svh;
   width: min(1320px, calc(100% - 64px));
-  grid-template-columns: minmax(520px, 0.9fr) minmax(560px, 1.1fr);
+  grid-template-columns: minmax(0, 560px);
   align-items: center;
   gap: clamp(24px, 3.4vw, 52px);
   padding: 126px 0 58px;
+  isolation: isolate;
 }
 
 .hero-copy {
   max-width: 560px;
-  justify-self: end;
+  z-index: 2;
+  justify-self: start;
 }
 
 .hero-portrait {
-  position: relative;
+  position: absolute;
+  top: 96px;
+  right: 0;
+  z-index: 1;
   display: grid;
-  align-self: center;
-  width: min(100%, 54vw, 820px);
+  width: 941px;
   min-width: 0;
-  margin-left: auto;
   padding-bottom: 0;
   overflow: clip;
 }
@@ -207,8 +210,9 @@ nav a:hover::after {
 .portrait-frame {
   position: relative;
   overflow: visible;
-  height: min(88svh, 960px);
-  min-height: 720px;
+  width: 941px;
+  height: 1672px;
+  min-height: 0;
   aspect-ratio: auto;
   border: 0;
   border-radius: 0;
@@ -244,13 +248,11 @@ nav a:hover::after {
 
 .portrait-frame img {
   display: block;
-  width: 106%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 49% 8%;
+  width: 941px;
+  height: 1672px;
+  object-fit: fill;
+  object-position: center;
   filter: saturate(0.96) contrast(1.05);
-  -webkit-mask-image: radial-gradient(ellipse at 56% 45%, #000 0%, #000 50%, rgba(0, 0, 0, 0.92) 63%, rgba(0, 0, 0, 0.36) 80%, transparent 98%);
-  mask-image: radial-gradient(ellipse at 56% 45%, #000 0%, #000 50%, rgba(0, 0, 0, 0.92) 63%, rgba(0, 0, 0, 0.36) 80%, transparent 98%);
 }
 
 .eyebrow {
@@ -290,9 +292,6 @@ h1 {
     transform: translateY(clamp(90px, 11vh, 145px));
   }
 
-  .hero-portrait {
-    transform: translateY(clamp(-96px, -8vh, -64px));
-  }
 }
 
 h2 {
@@ -903,6 +902,10 @@ h3 {
   }
 
   .hero-portrait {
+    position: relative;
+    top: auto;
+    right: auto;
+    z-index: 1;
     width: min(100%, 680px);
     min-width: 0;
     margin-right: auto;
@@ -910,9 +913,16 @@ h3 {
   }
 
   .portrait-frame {
+    width: 100%;
     height: auto;
     min-height: 0;
     aspect-ratio: 0.68;
+  }
+
+  .portrait-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
